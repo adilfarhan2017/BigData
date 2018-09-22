@@ -11,11 +11,11 @@ public class SalesMapper extends MapReduceBase implements Mapper<LongWritable, T
 	private final static IntWritable one = new IntWritable(1);
 
 	public void map(LongWritable key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
-		
+
 		//one more liness addedasasasasasa
 		String valueString = value.toString();
 		//second added here
-		System.out.println("hehehs");
+		System.out.println("hehehssasdadadad");
 		String[] SingleCountryData = valueString.split(",");
 		output.collect(new Text(SingleCountryData[7]), one);
 	}
