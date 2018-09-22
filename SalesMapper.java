@@ -15,7 +15,7 @@ public class SalesMapper extends MapReduceBase implements Mapper<LongWritable, T
 		//one more liness addedasasasasasa
 		String valueString = value.toString();
 		//second added here
-		System.out.println("commit diff branchdadadadadaadadad");
+		System.out.println("commit diffsasa branchdadadadadaadadad");
 		String[] SingleCountryData = valueString.split(",");
 		output.collect(new Text(SingleCountryData[7]), one);
 	}
